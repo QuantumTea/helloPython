@@ -23,5 +23,10 @@ class TestMaths(unittest.TestCase):
         self.assertEqual("Thursday", result2)
 
     def test_Friday_Thirteenth(self):
-        self.assertTrue(has_Friday_Thirteenth(2020, 11))
-        self.assertFalse(has_Friday_Thirteenth(2020, 12))
+        self.assertTrue(has_friday_thirteenth(2020, 11))
+        self.assertFalse(has_friday_thirteenth(2020, 12))
+
+    def test_Friday_Thirteenths_this_year(self):
+        self.assertEqual(1, friday_thirteenths_this_year(2016))
+        self.assertEqual(2, friday_thirteenths_this_year(2020))
+        self.assertEqual(3, friday_thirteenths_this_year(2015))
