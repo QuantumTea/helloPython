@@ -1,8 +1,3 @@
-"""
-What day of the week a given month starts on
-What day of the week a given date is
-Whether as given month/year has a Friday the Thirteenth
-"""
 from datetime import date
 
 
