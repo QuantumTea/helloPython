@@ -7,14 +7,12 @@ def get_latest_response():
     return x
 
 
-def get_latest_sol():
-    x = get_latest_response()
-    return x.status_code
+def get_latest_response_code():
+    return get_latest_response().status_code
 
 
 def get_latest_json():
-    x = get_latest_response()
-    return x.json()
+    return get_latest_response().json()
 
 
 def get_specific_sol(this_sol):

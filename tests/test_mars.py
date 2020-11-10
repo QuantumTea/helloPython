@@ -2,14 +2,16 @@ import unittest
 import mars
 
 
+# tests for an API GET request
+
 class TestMars(unittest.TestCase):
     def test_response_code(self):
-        result = mars.get_latest_sol()
+        result = mars.get_latest_response_code()
         self.assertEqual(200, result)
 
     def test_response_json(self):
         result = mars.get_latest_json()
-        print(result)
+        # print(result)
         self.assertIn('local_uv_irradiance_index', result)
 
     def test_given_sol(self):
