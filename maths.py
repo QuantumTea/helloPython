@@ -25,6 +25,7 @@ def factorial(a):
 
 
 def factorial_with_recursion(n):
+    # look up tail recursion
     if n == 1:
         return n
     elif n < 1:
