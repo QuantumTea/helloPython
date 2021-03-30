@@ -26,3 +26,6 @@ class TestStringy(unittest.TestCase):
 
         result = bottles_of_beer("Not a number")
         self.assertEqual("This is weird", result)
+
+    def test_sing_the_bottles_of_beer_song(self):
+        result = bottles_song(10)

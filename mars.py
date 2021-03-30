@@ -15,5 +15,5 @@ def get_latest_json():
 
 
 def get_specific_sol(this_sol):
-    url = 'https://api.maas2.apollorion.com/{0}'.format(str(this_sol))
+    url = f'https://api.maas2.apollorion.com/{str(this_sol)}'
     return requests.get(url).text

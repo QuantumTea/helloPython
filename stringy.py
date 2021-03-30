@@ -16,3 +16,7 @@ def bottles_of_beer(number_of_bottles):
             return str(number_of_bottles) + " bottles of beer on the wall"
     else:
         return "This is weird"
+
+
+def bottles_song(number_of_bottles):
+    return number_of_bottles

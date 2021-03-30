@@ -22,6 +22,19 @@ class TestMaths(unittest.TestCase):
         print("10/12/2017 is a " + result2)
         self.assertEqual("Thursday", result2)
 
+    def test_day_name_locale(self):
+        english = day_of_week_in_locale(2021, 3, 30, 'en_GB')
+        print("UK locale is: " + english)
+        self.assertEqual("Tuesday", english)
+
+        french = day_of_week_in_locale(2021, 3, 30, 'fr_FR')
+        print("French locale is: " + french)
+        self.assertEqual("mardi", french)
+
+        german = day_of_week_in_locale(2021, 3, 30, 'de_DE')
+        print("German locale is: " + german)
+        self.assertEqual("Dienstag", german)
+
     def test_Friday_Thirteenth(self):
         self.assertTrue(has_friday_thirteenth(2020, 11))
         self.assertFalse(has_friday_thirteenth(2020, 12))
