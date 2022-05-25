@@ -21,6 +21,7 @@ def has_friday_thirteenth(year_number, month_number):
 def day_of_week_in_locale(year_number, month_number, day_number, locale_string):
     test_date = date(year_number, month_number, day_number)
     # locale_day = format_date(test_date, format='full', locale=locale_string)
+    # http://babel.pocoo.org/en/latest/dates.html
     locale_day = format_date(test_date, "EEEE", locale=locale_string)
     return locale_day
 

@@ -2,7 +2,7 @@ import unittest
 from dates import *
 
 
-class TestMaths(unittest.TestCase):
+class TestDates(unittest.TestCase):
 
     def test_first_day_of_month(self):
         result = day_of_the_week_month_start(2020, 1)

@@ -2,8 +2,6 @@ import unittest
 import mars
 
 
-# tests for an API GET request
-
 class TestMars(unittest.TestCase):
     def test_status_code(self):
         result = mars.get_status_code()

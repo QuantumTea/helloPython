@@ -1,5 +1,4 @@
 import requests
-# https://api.maas2.apollorion.com/
 
 
 def get_latest_response():
