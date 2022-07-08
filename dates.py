@@ -1,6 +1,7 @@
 from datetime import date
 from babel.dates import format_date
 
+
 def day_of_the_week_month_start(year_number, month_number):
     return day_of_the_week(year_number, month_number, 1)
 

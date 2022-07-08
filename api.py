@@ -1,9 +1,10 @@
 import requests
-# http://dummy.restapiexample.com/
+# https://gorest.co.in
 
 
 def api_post():
-    url = "http://dummy.restapiexample.com/create/"
+    url = "https://gorest.co.in"
+    access_token = "5fbbcdae357a0e5c64ccd005ebb3adf5b6ea5436b5c8909140dfa2007821b5e9"
     payload = '{"name":"Kermit D Frog","salary":"123","age":"23"}'
     x = requests.post(url, data=payload)
     print(x.text)
@@ -13,7 +14,7 @@ def api_post():
     return x.status_code
 
 
-def api_get():
-    url = "http://dummy.restapiexample.com/employee/1"
+def api_get_status_code():
+    url = "https://gorest.co.in/public/v2/users"
     x = requests.get(url)
     return x.status_code
