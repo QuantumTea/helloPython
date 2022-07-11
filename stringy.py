@@ -5,8 +5,9 @@ def concat(string1, string2):
 def get_letter_in_string(input_string, index):
     try:
         return input_string[index]
-    except:
-        return "Exception, index out of bounds"
+    except IndexError:
+        # catch one specific error type
+        return "Error, index out of bounds"
 
 
 def bottles_of_beer(number_of_bottles):
