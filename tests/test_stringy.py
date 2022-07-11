@@ -47,3 +47,25 @@ class TestStringy(unittest.TestCase):
 
         result = bottles_of_beer("Not a number")
         self.assertEqual("This is weird", result)
+
+    def test_is_string_in_text(self):
+        text_to_search = "Once upon a time, in a galaxy far, far away, it was a dark and stormy night when a robot rolled into a bar."
+
+        result = is_string_in_text(text_to_search, "robot")
+        self.assertEqual(True, result)
+
+        result = is_string_in_text(text_to_search, "sheep")
+        self.assertEqual(False, result)
+
+    def test_where_string_in_text(self):
+        text_to_search = "Once upon a time, in a galaxy far, far away, it was a dark and stormy night when a robot rolled into a bar."
+
+        result = where_in_string_is_text(text_to_search, "Once")
+        self.assertEqual(0, result)
+
+        result = where_in_string_is_text(text_to_search, "galaxy")
+        self.assertEqual(6, result)
+
+        result = where_in_string_is_text(text_to_search, "robot")
+        self.assertEqual(19, result)
+

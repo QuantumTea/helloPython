@@ -33,3 +33,18 @@ def bottles_song(number_of_bottles):
 
     print(whole_song)
     return whole_song
+
+
+def is_string_in_text(text_to_search, search_term):
+    if text_to_search.find(search_term) != -1:
+        return True
+    else:
+        return False
+
+
+def where_in_string_is_text(text_to_search, search_term):
+    if text_to_search.find(search_term) == -1:
+        return "Search string not found"
+    # split on spaces
+    tokenised_string = text_to_search.split()
+    return tokenised_string.index(search_term)
