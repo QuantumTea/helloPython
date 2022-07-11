@@ -66,6 +66,7 @@ class TestStringy(unittest.TestCase):
         result = where_in_string_is_text(text_to_search, "robot")
         self.assertEqual(19, result)
 
-        result = where_in_string_is_text(text_to_search, "sheep")
+        # case-sensitive search
+        result = where_in_string_is_text(text_to_search, "once")
         self.assertEqual("Search string not found", result)
 
