@@ -9,25 +9,25 @@ class TestMaths(unittest.TestCase):
         result = maths.my_sum(data)
         self.assertEqual(15, result)
         other_data = [6, 7, 8, 9, 10]
-        result = my_sum(other_data)
+        result = maths.my_sum(other_data)
         self.assertEqual(40, result)
 
     def test_multiply_2_numbers(self):
         result = maths.my_multiply(2, 4)
         self.assertEqual(8, result)
-        result = my_multiply(7, 9)
+        result = maths.my_multiply(7, 9)
         self.assertEqual(63, result)
 
     def test_square(self):
         result = maths.my_square(3)
         self.assertEqual(9, result)
-        result = my_square(5)
+        result = maths.my_square(5)
         self.assertEqual(25, result)
 
     def test_cube(self):
         result = maths.my_cube(3)
         self.assertEqual(27, result)
-        result = my_cube(5)
+        result = maths.my_cube(5)
         self.assertEqual(125, result)
 
     def test_factorial(self):

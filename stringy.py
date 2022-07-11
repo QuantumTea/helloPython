@@ -3,7 +3,10 @@ def concat(string1, string2):
 
 
 def get_letter_in_string(input_string, index):
-    return input_string[index]
+    try:
+        return input_string[index]
+    except:
+        return "Exception, index out of bounds"
 
 
 def bottles_of_beer(number_of_bottles):
@@ -12,6 +15,8 @@ def bottles_of_beer(number_of_bottles):
             return "No bottles of beer on the wall, how sad."
         elif number_of_bottles == 1:
             return "one bottle of beer on the wall"
+        elif number_of_bottles < 0:
+            return "Go to the store and buy some more"
         elif number_of_bottles >= 2:
             return str(number_of_bottles) + " bottles of beer on the wall"
     else:
