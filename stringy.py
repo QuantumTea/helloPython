@@ -1,5 +1,6 @@
 def concat(string1, string2):
-    return string1 + string2
+    # trim strings
+    return string1.strip() + " " + string2.strip()
 
 
 def get_letter_in_string(input_string, index):
@@ -13,9 +14,9 @@ def get_letter_in_string(input_string, index):
 def bottles_of_beer(number_of_bottles):
     if type(number_of_bottles) == int:
         if number_of_bottles == 0:
-            return "No bottles of beer on the wall, how sad."
+            return "No bottles of beer on the wall, how sad"
         elif number_of_bottles == 1:
-            return "one bottle of beer on the wall"
+            return "One bottle of beer on the wall"
         elif number_of_bottles < 0:
             return "Go to the store and buy some more"
         elif number_of_bottles >= 2:
