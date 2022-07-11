@@ -1,5 +1,6 @@
 import unittest
 from stringy import *
+# https://www.youtube.com/watch?v=xCHYR3wRQLQ
 
 
 class TestStringy(unittest.TestCase):
