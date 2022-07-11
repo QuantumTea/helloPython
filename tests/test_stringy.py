@@ -63,9 +63,9 @@ class TestStringy(unittest.TestCase):
         result = where_in_string_is_text(text_to_search, "Once")
         self.assertEqual(0, result)
 
-        result = where_in_string_is_text(text_to_search, "galaxy")
-        self.assertEqual(6, result)
-
         result = where_in_string_is_text(text_to_search, "robot")
         self.assertEqual(19, result)
+
+        result = where_in_string_is_text(text_to_search, "sheep")
+        self.assertEqual("Search string not found", result)
 
