@@ -49,3 +49,15 @@ def where_in_string_is_text(text_to_search, search_term):
     # split on spaces
     tokenised_string = text_to_search.split()
     return tokenised_string.index(search_term)
+
+
+def case_insensitive_search(text_to_search, search_term):
+    lower_text_to_search = text_to_search.lower()
+    lower_search_term = search_term.lower()
+
+    if lower_text_to_search.find(lower_search_term) == -1:
+        return "Search string not found"
+
+    # split on spaces
+    tokenised_string = lower_text_to_search.split()
+    return tokenised_string.index(lower_search_term)
