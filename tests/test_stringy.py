@@ -1,8 +1,9 @@
 import unittest
 from stringy import *
 
-
-# https://www.youtube.com/watch?v=xCHYR3wRQLQ
+text_to_search = "Once upon a time, in a galaxy far, far away, " \
+                        "it was a dark and stormy night when a robot " \
+                        "rolled into a bar."
 
 
 class TestStringy(unittest.TestCase):
@@ -31,6 +32,7 @@ class TestStringy(unittest.TestCase):
         self.assertEqual("Error, index out of bounds", result)
 
     def test_song_lyrics(self):
+        # https://www.youtube.com/watch?v=xCHYR3wRQLQ
         result = bottles_of_beer(1)
         self.assertEqual("One bottle of beer on the wall", result)
 
@@ -51,10 +53,6 @@ class TestStringy(unittest.TestCase):
         self.assertEqual("This is weird", result)
 
     def test_is_string_in_text(self):
-        text_to_search = "Once upon a time, in a galaxy far, far away, " \
-                         "it was a dark and stormy night when a robot " \
-                         "rolled into a bar."
-
         result = is_string_in_text(text_to_search, "robot")
         self.assertEqual(True, result)
 
@@ -62,10 +60,6 @@ class TestStringy(unittest.TestCase):
         self.assertEqual(False, result)
 
     def test_where_string_in_text(self):
-        text_to_search = "Once upon a time, in a galaxy far, far away, " \
-                         "it was a dark and stormy night when a robot " \
-                         "rolled into a bar."
-
         result = where_in_string_is_text(text_to_search, "Once")
         self.assertEqual(0, result)
 
