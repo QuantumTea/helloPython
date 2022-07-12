@@ -1,5 +1,5 @@
 def concat(string1, string2):
-    # trim strings
+    # trim strings, add one space back
     return string1.strip() + " " + string2.strip()
 
 
